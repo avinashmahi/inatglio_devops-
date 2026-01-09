@@ -1,2 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenkins Deployment Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>✅ Jenkins + GitHub + Ansible Deployment</h1>
+    <p class="subtitle">Dummy Website for CI/CD Testing</p>
+  </header>
 
-this is my first website deployment
+  <main class="container">
+    <section class="card">
+      <h2>🚀 Deployment Status</h2>
+      <p id="status">Checking...</p>
+      <button onclick="checkDeploy()">Refresh Status</button>
+    </section>
+
+    <section class="card">
+      <h2>📌 Build Info</h2>
+      <ul>
+        <li><b>Project:</b> DevOps CI/CD Demo</li>
+        <li><b>Server:</b> AWS EC2 Webserver</li>
+        <li><b>Tool:</b> Jenkins + Ansible</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🕒 Last Updated</h2>
+      <p id="time"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made for Jenkins Testing | © 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
